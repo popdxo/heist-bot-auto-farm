@@ -10,7 +10,7 @@ const heistbotId = "1225070865935368265";
 
 client.on("ready", async () => {
   const discordchannel = client.channels.cache.get(channelid);
-  console.log(`Started fisher on ${client.user.username}`);
+  console.log(`Started nagger on ${client.user.username}`);
   let begged = 0;
   function goBeg() {
     discordchannel

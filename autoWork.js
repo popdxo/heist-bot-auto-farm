@@ -10,7 +10,7 @@ const heistbotId = "1225070865935368265";
 
 client.on("ready", async () => {
   const discordchannel = client.channels.cache.get(channelid);
-  console.log(`Started fisher on ${client.user.username}`);
+  console.log(`Started worker on ${client.user.username}`);
   let worked = 0;
   function goWork() {
     discordchannel
