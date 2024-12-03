@@ -4,6 +4,4 @@ channelId = ""; // put the channel id you want to fish in
 module.exports = {
   token: token,
   channelId: channelId,
-  casts: casts,
-  coolDown: coolDown,
 };
