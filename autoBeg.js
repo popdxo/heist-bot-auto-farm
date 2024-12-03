@@ -22,5 +22,6 @@ client.on("ready", async () => {
       })
       .catch(console.error);
   }
+  goBeg();
 });
 client.login(token);
