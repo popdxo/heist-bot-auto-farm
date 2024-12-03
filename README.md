@@ -15,10 +15,12 @@ To use this, make sure you have [Node.js](https://nodejs.org/) installed and run
 
 Clone/download the repo
 
-Make sure you have your discord token copied and a channel ID from a Discord server channel with the bot invited
+Make sure you have your discord token copied and a channel ID from a Discord server channel with the bot invited.
+
 Before you get both the token and the channel ID, you must have developer mode enabled on your account.
 
 If you need to get your Discord token, press ctrl+shift+i and go to the console tab then paste this in on the console tab.
+
 This will only output your token so nothing bad will happen
 
 ```javascript
@@ -30,6 +32,7 @@ If you need to get a channel ID, just right click the `# channel name` button an
 ### Easy Setup
 
 On windows just double-click windowsStart.bat
+
 You can just run start.sh on linux
 
 ### Manual Setup
