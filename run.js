@@ -9,10 +9,11 @@ function autoBegStart() {
     console.log(`AutoBeg error: ${error.message} (report this error: 1)`);
   });
   autoBeg.stderr.on("data", (data) => {
+    setTimeout(autoBegStart, 10 * 1000);
     console.error(
       `AutoBeg stderr: ${data} (error: 2 please help me fix this error)`,
     );
-    setTimeout(autoBegStart, 10 * 1000);
+    console.log("Restarting autoBeg in 10 seconds");
   });
   autoBeg.on("close", (code) => {
     console.log(
@@ -29,12 +30,13 @@ function autoWorkStart() {
   autoWork.on("error", (error) => {
     console.log(`AutoWork error: ${error.message} (report this error: 1)`);
     console.log("Restarting autoWork in 10 seconds");
-    setTimeout(autoWorkStart, 10 * 1000);
   });
   autoWork.stderr.on("data", (data) => {
+    setTimeout(autoWorkStart, 10 * 1000);
     console.error(
       `AutoWork stderr: ${data} (error: 2 please help me fix this error)`,
     );
+    console.log("Restarting autoWork in 10 seconds");
   });
   autoWork.on("close", (code) => {
     console.log(
