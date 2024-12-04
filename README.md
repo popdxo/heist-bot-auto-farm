@@ -15,17 +15,31 @@ To use this, make sure you have [Node.js](https://nodejs.org/) installed and run
 
 Clone/download the repo
 
-Open the config.js file in any text editor
+Make sure you have your discord token copied and a channel ID from a Discord server channel with the bot invited.
 
-Follow the instructions in the comments for the first 4 lines.
+Before you get both the token and the channel ID, you must have developer mode enabled on your account.
 
-Run the script using `node path/to/run.js`
+If you need to get your Discord token, press ctrl+shift+i and go to the console tab then paste this in on the console tab.
 
-
-If you need to get your Discord token, press ctrl+shift+i and go to the console tab.
-
-You can use this to output your token: (Credit to NotNexuss)
+This will only output your token so nothing bad will happen
 
 ```javascript
 (webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()
 ```
+
+If you need to get a channel ID, just right click the `# channel name` button and click Copy Channel ID
+
+### Easy Setup
+
+On windows just double-click windowsStart.bat
+
+You can just run start.sh on linux
+
+### Manual Setup
+
+Open the config.js file in any text editor
+
+Follow the instructions in the comments for the first 2 lines. 
+
+Run the script using `node path/to/run.js`
+
